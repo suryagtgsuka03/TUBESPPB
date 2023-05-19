@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Infoobat_keranjang">
+
+    <RelativeLayout
+        android:id="@+id/utama_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="1100dp">
+        <FrameLayout
+            android:id="@+id/gambar_info"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/obat">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Contoh Obat)"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="150dp"
+                ></TextView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/navbar_info"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp">
+            <ImageButton
+                android:id="@+id/back_infok"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/arrow_back"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp">
+            </ImageButton>
+        </FrameLayout>
+
+        <View
+            android:id="@+id/garis_info"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="4dp"
+            android:background="@color/grey"
+            android:layout_below="@id/gambar_info"/>
+
+        <FrameLayout
+            android:id="@+id/nama_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/garis_info"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Obat"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="@color/black">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Satuan obat"
+                android:textSize="15dp"
+                android:textColor="@color/black">
+            </TextView>
+        </FrameLayout>
+
+        <View
+            android:id="@+id/garis3_info"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="10dp"
+            android:background="@color/grey"
+            android:layout_below="@id/nama_info"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:layout_below="@id/garis3_info">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih Opsi Pembelian"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:textColor="@color/black">
+            </TextView>
+
+
+            <FrameLayout
+                android:id="@+id/deskripsi_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Deskripsi"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/black">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, provident distinctio soluta, minus magni reiciendis quae illum facilis ea explicabo libero? Sunt ullam nihil officia assumenda ipsum, facilis aspernatur numquam, error, consequuntur autem quos. Ducimus mollitia maiores eius ea veritatis nemo repellendus ipsam quo minus quam? Ad illum distinctio similique."
+                    android:textSize="15dp"
+                    android:textColor="@color/black">
+                </TextView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginTop="200dp"
+                android:id="@+id/indikasi_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Indikasi Umum"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/black">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, provident distinctio soluta, minus magni reiciendis quae illum facilis ea explicabo libero? Sunt ullam nihil officia assumenda ipsum."
+                    android:textSize="15dp"
+                    android:textColor="@color/black">
+                </TextView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginTop="330dp"
+                android:id="@+id/komposisi_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Komposisi"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/black">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, provident distinctio soluta, minus magni reiciendis quae illum facilis ea explicabo libero? Sunt ullam nihil officia assumenda ipsum."
+                    android:textSize="15dp"
+                    android:textColor="@color/black">
+                </TextView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginTop="460dp"
+                android:id="@+id/dosis_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Dosis"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/black">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, provident distinctio soluta, minus magni reiciendis quae illum facilis ea explicabo libero? Sunt ullam nihil officia assumenda ipsum."
+                    android:textSize="15dp"
+                    android:textColor="@color/black">
+                </TextView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginTop="590dp"
+                android:id="@+id/aturan_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Aturan Pakai"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/black">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, provident distinctio soluta, minus magni reiciendis quae illum facilis ea explicabo libero? Sunt ullam nihil officia assumenda ipsum."
+                    android:textSize="15dp"
+                    android:textColor="@color/black">
+                </TextView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginTop="720dp"
+                android:id="@+id/perhatian_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Perhatian"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/black">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, provident distinctio soluta, minus magni reiciendis quae illum facilis ea explicabo libero? Sunt ullam nihil officia assumenda ipsum."
+                    android:textSize="15dp"
+                    android:textColor="@color/black">
+                </TextView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginTop="850dp"
+                android:id="@+id/kontraindikasi_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Kontraindikasi"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/black">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, provident distinctio soluta, minus magni reiciendis quae illum facilis ea explicabo libero? Sunt ullam nihil officia assumenda ipsum."
+                    android:textSize="15dp"
+                    android:textColor="@color/black">
+                </TextView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginTop="980dp"
+                android:id="@+id/efek_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Efek Samping"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/black">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, provident distinctio soluta, minus magni reiciendis quae illum facilis ea explicabo libero? Sunt ullam nihil officia assumenda ipsum."
+                    android:textSize="15dp"
+                    android:textColor="@color/black">
+                </TextView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginTop="1120dp"
+                android:id="@+id/golongan_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Golongan Produk"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/black">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="Lorem ipsum dolor sit, amet consectetur."
+                    android:textSize="15dp"
+                    android:textColor="@color/black">
+                </TextView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginTop="1200dp"
+                android:id="@+id/manufaktur_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Manufaktur"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/black">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="Lorem ipsum dolor sit, amet consectetur."
+                    android:textSize="15dp"
+                    android:textColor="@color/black">
+                </TextView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginTop="1280dp"
+                android:id="@+id/registrasi_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="No. Registrasi"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/black">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="Lorem ipsum dolor sit, amet consectetur."
+                    android:textSize="15dp"
+                    android:textColor="@color/black">
+                </TextView>
+            </FrameLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_marginTop="1830dp"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/sky"
+            android:padding="30dp">
+            <ImageButton
+                android:layout_marginStart="80dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/light_grey"
+                android:src="@drawable/logo_minus">
+            </ImageButton>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="150dp"
+                android:textSize="25dp"
+                ></TextView>
+            <ImageButton
+                android:layout_marginStart="190dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/light_grey"
+                android:src="@drawable/logo_plus">
+            </ImageButton>
+        </FrameLayout>
+
+    </RelativeLayout>
+</ScrollView>

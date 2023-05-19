@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Janji_2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="1100dp"
+        >
+        <FrameLayout
+            android:id="@+id/navbar_janji"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/sky">
+            <ImageButton
+                android:id="@+id/back_janji2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/arrow_back"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp">
+            </ImageButton>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buat Janji Offline"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="60dp">
+            </TextView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/gambar_janji"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/navbar_janji">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-60dp"
+                android:src="@drawable/rsjih"></ImageView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/judul_janji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gambar_janji"
+            android:layout_marginTop="-20dp"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RS JIH"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Rumah Sakit Umum"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/kotak_abumuda2"
+                android:textAlignment="viewEnd"
+                android:text="4.6"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_marginLeft="170dp"
+                android:drawableStart="@drawable/logo_star">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/kotak_abumuda2"
+                android:textAlignment="viewEnd"
+                android:text="2.6km"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_marginLeft="240dp"
+                android:drawableStart="@drawable/location">
+            </TextView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/isi_janji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/judul_janji"
+            android:layout_marginTop="-10dp"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/buat1"
+                android:layout_marginTop="-6dp"
+                android:padding="0dp"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:text="Buat Janji"
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:backgroundTint="@color/white">
+            </Button>
+
+            <Button
+                android:id="@+id/info"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="-6dp"
+                android:layout_marginLeft="75dp"
+                android:padding="0dp"
+                android:text="Informasi"
+                android:textSize="10dp"
+                android:textColor="@color/sky"
+                android:textStyle="bold"
+                android:backgroundTint="@color/white">
+            </Button>
+
+            <View
+                android:layout_width="70dp"
+                android:visibility="visible"
+                android:layout_height="2dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/sky"/>
+        </FrameLayout>
+
+        <View
+            android:id="@+id/garis_janji"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="2dp"
+            android:background="@color/grey"
+            android:layout_below="@id/isi_janji"/>
+
+        <FrameLayout
+            android:id="@+id/alamat_janji"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/kotak_putih"
+            android:layout_below="@id/garis_janji"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Alamat">
+            </TextView>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:text="Jl. KH. Ahmad Dahlan,Dusun III, Dukuhwaluh, Kec. Kembaran, KabupatenBanyumas, Jawa Tengah 53182">
+            </TextView>
+            <Button
+                android:id="@+id/btn_telp_janji"
+                android:layout_width="104dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/grey"
+                android:textColor="@color/black"
+                android:layout_marginTop="100dp"
+                android:text="Telepon"
+                android:textSize="13dp">
+            </Button>
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/maps"
+                android:layout_marginLeft="200dp"
+
+                ></ImageView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/profil_janji"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/kotak_putih"
+            android:layout_below="@id/alamat_janji"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Profil">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:text='Rumah Sakit "JIH" Purwokerto selalu berkomitmen menghadirkan inovasi layanan untuk pasien. Didukung oleh Dokter, Perawat, Paramedis dan Staf yang profesional dan ramah melayani pasien. Serta didukung dengan peralatan medis modern dan terbaru, kami yakin Rumah Sakit "JIH" Purwokerto akan selalu menjadi pilihan Anda dan Keluarga'>
+            </TextView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/profil_janji"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/kotak_putih"
+            android:layout_below="@id/alamat_janji"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Profil">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:text='Rumah Sakit "JIH" Purwokerto selalu berkomitmen menghadirkan inovasi layanan untuk pasien. Didukung oleh Dokter, Perawat, Paramedis dan Staf yang profesional dan ramah melayani pasien. Serta didukung dengan peralatan medis modern dan terbaru, kami yakin Rumah Sakit "JIH" Purwokerto akan selalu menjadi pilihan Anda dan Keluarga'>
+            </TextView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fasilitas_janji"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/kotak_putih"
+            android:layout_below="@id/profil_janji"
+            android:padding="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Fasilitas Tersedia">
+            </TextView>
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:textStyle="normal"
+                android:text="- Emergency Kids
+                                - Ruang Triase
+                                - Momskidspedia
+                                - UGD">
+            </TextView>
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="180dp"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:textStyle="normal"
+                android:text="-Rawat Inap
+                -Rawat Jalan
+                -Klinik Vaksin
+                -Farmasi">
+            </TextView>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
